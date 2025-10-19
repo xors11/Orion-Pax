@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* Professional UI Components - Light Mode Only */
+.professional-card {
+  @apply bg-white border border-gray-200;
+}
+
+.professional-shadow {
+  @apply shadow-sm;
+}
+
+.professional-shadow-lg {
+  @apply shadow-lg;
+}
+
+.professional-border {
+  @apply border border-gray-200;
+}
+
+.professional-border-t {
+  @apply border-t border-gray-200;
+}
+
+.professional-backdrop {
+  @apply bg-white/95 backdrop-blur-sm;
+}
+
+.professional-input {
+  @apply bg-white border border-gray-300 text-gray-900 placeholder-gray-500;
+}
+
+.professional-input:focus {
+  @apply ring-2 ring-blue-500 border-blue-500 outline-none;
+}
+
+.professional-btn {
+  @apply bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200;
+}
+
+.professional-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.professional-loading {
+  @apply inline-block w-2 h-2 bg-gray-400 rounded-full animate-pulse;
+}
+
+.professional-loading:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.professional-loading:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Chat message styling */
+.chat-message {
+  @apply transition-all duration-200 hover:shadow-md;
+}
+
+/* Smooth transitions for better UX */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Enhanced light mode styling */
+body {
+  @apply bg-white text-gray-900;
+}
+
+/* Professional gradients and effects */
+.gradient-bg {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Clean typography */
+.text-gradient {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
